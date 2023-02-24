@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/login-form-02/fonts/icomoon/style.css">
+<link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/login-form-02/css/owl.carousel.min.css">
+
+<link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/login-form-02/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/login-form-02/css/style.css">
+<link rel="stylesheet" href="static/css/login.css">
+<title>Login</title>
+<script nonce="90f5e26f-d45a-48dd-99f7-9d144e6bb038">(function(w,d){!function(bw,bx,by,bz){bw[by]=bw[by]||{};bw[by].executed=[];bw.zaraz={deferred:[],listeners:[]};bw.zaraz.q=[];bw.zaraz._f=function(bA){return function(){var bB=Array.prototype.slice.call(arguments);bw.zaraz.q.push({m:bA,a:bB})}};for(const bC of["track","set","debug"])bw.zaraz[bC]=bw.zaraz._f(bC);bw.zaraz.init=()=>{var bD=bx.getElementsByTagName(bz)[0],bE=bx.createElement(bz),bF=bx.getElementsByTagName("title")[0];bF&&(bw[by].t=bx.getElementsByTagName("title")[0].text);bw[by].x=Math.random();bw[by].w=bw.screen.width;bw[by].h=bw.screen.height;bw[by].j=bw.innerHeight;bw[by].e=bw.innerWidth;bw[by].l=bw.location.href;bw[by].r=bx.referrer;bw[by].k=bw.screen.colorDepth;bw[by].n=bx.characterSet;bw[by].o=(new Date).getTimezoneOffset();if(bw.dataLayer)for(const bJ of Object.entries(Object.entries(dataLayer).reduce(((bK,bL)=>({...bK[1],...bL[1]})))))zaraz.set(bJ[0],bJ[1],{scope:"page"});bw[by].q=[];for(;bw.zaraz.q.length;){const bM=bw.zaraz.q.shift();bw[by].q.push(bM)}bE.defer=!0;for(const bN of[localStorage,sessionStorage])Object.keys(bN||{}).filter((bP=>bP.startsWith("_zaraz_"))).forEach((bO=>{try{bw[by]["z_"+bO.slice(7)]=JSON.parse(bN.getItem(bO))}catch{bw[by]["z_"+bO.slice(7)]=bN.getItem(bO)}}));bE.referrerPolicy="origin";bE.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(bw[by])));bD.parentNode.insertBefore(bE,bD)};["complete","interactive"].includes(bx.readyState)?zaraz.init():bw.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+<div class="d-lg-flex half">
+<div class="bg order-1 order-md-2" style="background-image: url('static/images/wall.jpg');"></div>
+<div class="contents order-2 order-md-1">
+<div class="container">
+<div class="row align-items-center justify-content-center">
+<div class="col-md-7">
+<h3>Login to <strong>Anime World</strong></h3>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores ex ut quidem quo. Magni ipsum voluptas inventore expedita rerum sit natus soluta quasi. Excepturi, suscipit veritatis? Quae minus illum voluptas.</p>
+<form action="/login" method="post">
+    {% csrf_token %}
+    <div class="form-group first">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" placeholder="username" name="username" id="username">
+    </div>
+    <div class="form-group last mb-3">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Your Password" id="password">
+    </div>
+    <div class="d-flex mb-5 align-items-center">
+        <div class="form-check">
+            <input class="form-check-input green" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Remember me
+            </label>
+          </div>
+        </label>
+        <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+    </div>
+    <input type="submit" value="Log In" class="btn btn-block btn-success">
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://preview.colorlib.com/theme/bootstrap/login-form-02/js/jquery-3.3.1.min.js"></script>
+<script src="https://preview.colorlib.com/theme/bootstrap/login-form-02/js/popper.min.js"></script>
+<script src="https://preview.colorlib.com/theme/bootstrap/login-form-02/js/bootstrap.min.js"></script>
+<script src="https://preview.colorlib.com/theme/bootstrap/login-form-02/js/main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"79e9be5edd84dc77","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
